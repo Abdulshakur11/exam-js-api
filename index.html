@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-4">
+          <ul class="users-list user">
+
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <ul class="users-post-list post">
+
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <ul class="users-comment-post comment">
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- USERS TEMPLATE -->
+  <template id="users-template">
+    <li class="user__item">
+      <p class="name">Leanne Graham</p>
+      <p class="user__name">Bret</p>
+      <a class="user__email" href="mailto:Sincere@april.biz">Sincere@april.biz</a>
+      <p class="user__address">street: 'Kulas Light', suite: 'Apt. 556', city: 'Gwenborough'</p>
+      <button class="btn btn-success user__btn">View post</button>
+    </li>
+  </template>
+  <!-- POSTS TEMPLATE -->
+  <template id="post-tempalte">
+    <li class="post__item">
+      <h5 class="post__item-title">Title</h5>
+      <p class="post__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea aliquid? Hic, optio.
+        Sequi est quasi iusto accusantium odio incidunt ullam deleniti deserunt earum consequuntur.</p>
+        <button class="btn btn-warning post__btn">View comments</button>
+    </li>
+  </template>
+
+  <template id="comments-template">
+    <li class="comment__item">
+      <h5 class="comment__title">Title</h5>
+      <a class="comment__link" href="mailto:">kdajsndnsdo!ee</a>
+      <p class="comment__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit quam totam
+        nesciunt provident. Id quis blanditiis animi tempora voluptate?</p>
+    </li>
+  </template>
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

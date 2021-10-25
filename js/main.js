@@ -13,7 +13,7 @@ const fragmentComment = document.createDocumentFragment();
 
 // ========= SITE API ========
 const APIURL = "https://jsonplaceholder.typicode.com";
-// ============ FUNCTION USERS ITEM ==========
+// ============ FUNCTION USERS ITEM ===========================================
 fetch(`${APIURL}/users`)
   .then((response) => response.json())
   .then((data) => {
@@ -43,10 +43,7 @@ let renderUsers = function (user) {
 }
 
 
-
-
-
-// ========== FUNCTION USERS POST ITEM ===========
+// ========== FUNCTION USERS POST ITEM =======================================
 function postFunction(id) {
   fetch(`${APIURL}/posts`)
     .then((response) => response.json())
@@ -82,8 +79,7 @@ elUserListWrapper.addEventListener('click', function (e) {
 });
 
 
-// ========= FUNCTION COMMENTS ITEM =========
-
+// ========= FUNCTION COMMENTS ITEM ================================================
 function commentsFunction(id) {
   fetch(`${APIURL}/comments`)
     .then((response) => response.json())
